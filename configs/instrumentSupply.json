@@ -1,0 +1,717 @@
+{
+  "BTCUSDT": {
+    "futuresInstrument": "BTCUSDT",
+    "maxSupply": 21000000,
+    "totalSupply": 19746778
+  },
+  "LTCUSDT": {
+    "futuresInstrument": "LTCUSDT",
+    "maxSupply": 84000000,
+    "totalSupply": 84000000
+  },
+  "XRPUSDT": {
+    "futuresInstrument": "XRPUSDT",
+    "maxSupply": 100000000000,
+    "totalSupply": 99987315360
+  },
+  "DOGEUSDT": {
+    "futuresInstrument": "DOGEUSDT",
+    "maxSupply": null,
+    "totalSupply": 145736036383.7052
+  },
+  "XLMUSDT": {
+    "futuresInstrument": "XLMUSDT",
+    "maxSupply": 50001806812,
+    "totalSupply": 50001786946.54267
+  },
+  "ETHUSDT": {
+    "futuresInstrument": "ETHUSDT",
+    "maxSupply": null,
+    "totalSupply": 120298529.85377939
+  },
+  "LSKUSDT": {
+    "futuresInstrument": "LSKUSDT",
+    "maxSupply": null,
+    "totalSupply": 400000000
+  },
+  "ETCUSDT": {
+    "futuresInstrument": "ETCUSDT",
+    "maxSupply": 210700000,
+    "totalSupply": 210700000
+  },
+  "NEOUSDT": {
+    "futuresInstrument": "NEOUSDT",
+    "maxSupply": 100000000,
+    "totalSupply": 100000000
+  },
+  "GLMUSDT": {
+    "futuresInstrument": "GLMUSDT",
+    "maxSupply": null,
+    "totalSupply": 1000000000
+  },
+  "MKRUSDT": {
+    "futuresInstrument": "MKRUSDT",
+    "maxSupply": 1005577,
+    "totalSupply": 977631.03695089
+  },
+  "QTUMUSDT": {
+    "futuresInstrument": "QTUMUSDT",
+    "maxSupply": null,
+    "totalSupply": 107822406
+  },
+  "BATUSDT": {
+    "futuresInstrument": "BATUSDT",
+    "maxSupply": null,
+    "totalSupply": 1500000000
+  },
+  "IOTAUSDT": {
+    "futuresInstrument": "IOTAUSDT",
+    "maxSupply": null,
+    "totalSupply": 3401744787
+  },
+  "BNTUSDT": {
+    "futuresInstrument": "BNTUSDT",
+    "maxSupply": null,
+    "totalSupply": 125026201.99792798
+  },
+  "NMRUSDT": {
+    "futuresInstrument": "NMRUSDT",
+    "maxSupply": 11000000,
+    "totalSupply": 10715447.03771957
+  },
+  "EOSUSDT": {
+    "futuresInstrument": "EOSUSDT",
+    "maxSupply": 2100000000,
+    "totalSupply": 2100000000
+  },
+  "STORJUSDT": {
+    "futuresInstrument": "STORJUSDT",
+    "maxSupply": null,
+    "totalSupply": 424999998.00000113
+  },
+  "GASUSDT": {
+    "futuresInstrument": "GASUSDT",
+    "maxSupply": null,
+    "totalSupply": 64992331
+  },
+  "BCHUSDT": {
+    "futuresInstrument": "BCHUSDT",
+    "maxSupply": 21000000,
+    "totalSupply": 19753500
+  },
+  "BNBUSDT": {
+    "futuresInstrument": "BNBUSDT",
+    "maxSupply": null,
+    "totalSupply": 145935110.0005322
+  },
+  "ZRXUSDT": {
+    "futuresInstrument": "ZRXUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 1000000000
+  },
+  "LRCUSDT": {
+    "futuresInstrument": "LRCUSDT",
+    "maxSupply": null,
+    "totalSupply": 1373873397.4424574
+  },
+  "TRXUSDT": {
+    "futuresInstrument": "TRXUSDT",
+    "maxSupply": null,
+    "totalSupply": 86797522815.3724
+  },
+  "MANAUSDT": {
+    "futuresInstrument": "MANAUSDT",
+    "maxSupply": null,
+    "totalSupply": 2193179327.320146
+  },
+  "LINKUSDT": {
+    "futuresInstrument": "LINKUSDT",
+    "maxSupply": null,
+    "totalSupply": 1000000000
+  },
+  "ADAUSDT": {
+    "futuresInstrument": "ADAUSDT",
+    "maxSupply": 45000000000,
+    "totalSupply": 37170426657.961
+  },
+  "XTZUSDT": {
+    "futuresInstrument": "XTZUSDT",
+    "maxSupply": null,
+    "totalSupply": 1017627581.414858
+  },
+  "ICXUSDT": {
+    "futuresInstrument": "ICXUSDT",
+    "maxSupply": null,
+    "totalSupply": 1015108208.9167682
+  },
+  "ENJUSDT": {
+    "futuresInstrument": "ENJUSDT",
+    "maxSupply": null,
+    "totalSupply": 1831258055.8174436
+  },
+  "FILUSDT": {
+    "futuresInstrument": "FILUSDT",
+    "maxSupply": null,
+    "totalSupply": 1959995224
+  },
+  "WAXPUSDT": {
+    "futuresInstrument": "WAXPUSDT",
+    "maxSupply": null,
+    "totalSupply": 4188319973.6854086
+  },
+  "IOSTUSDT": {
+    "futuresInstrument": "IOSTUSDT",
+    "maxSupply": null,
+    "totalSupply": 21315000000
+  },
+  "THETAUSDT": {
+    "futuresInstrument": "THETAUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 1000000000
+  },
+  "ZILUSDT": {
+    "futuresInstrument": "ZILUSDT",
+    "maxSupply": null,
+    "totalSupply": 19393945200.71795
+  },
+  "RENUSDT": {
+    "futuresInstrument": "RENUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 999999632.80375
+  },
+  "ONTUSDT": {
+    "futuresInstrument": "ONTUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 1000000000
+  },
+  "RVNUSDT": {
+    "futuresInstrument": "RVNUSDT",
+    "maxSupply": 21000000000,
+    "totalSupply": 14221955112.963917
+  },
+  "SNXUSDT": {
+    "futuresInstrument": "SNXUSDT",
+    "maxSupply": null,
+    "totalSupply": 328193104.0887736
+  },
+  "USDCUSDT": {
+    "futuresInstrument": "USDCUSDT",
+    "maxSupply": null,
+    "totalSupply": 34614090527.57585
+  },
+  "FTMUSDT": {
+    "futuresInstrument": "FTMUSDT",
+    "maxSupply": null,
+    "totalSupply": 3175000000
+  },
+  "LPTUSDT": {
+    "futuresInstrument": "LPTUSDT",
+    "maxSupply": null,
+    "totalSupply": 34189929.84645287
+  },
+  "ATOMUSDT": {
+    "futuresInstrument": "ATOMUSDT",
+    "maxSupply": null,
+    "totalSupply": 390934204
+  },
+  "MATICUSDT": {
+    "futuresInstrument": "MATICUSDT",
+    "maxSupply": null,
+    "totalSupply": 10000000000
+  },
+  "ONEUSDT": {
+    "futuresInstrument": "ONEUSDT",
+    "maxSupply": null,
+    "totalSupply": 14372943584.762915
+  },
+  "RSRUSDT": {
+    "futuresInstrument": "RSRUSDT",
+    "maxSupply": null,
+    "totalSupply": 100000000000
+  },
+  "ALGOUSDT": {
+    "futuresInstrument": "ALGOUSDT",
+    "maxSupply": 10000000000,
+    "totalSupply": 10000000000
+  },
+  "CHZUSDT": {
+    "futuresInstrument": "CHZUSDT",
+    "maxSupply": null,
+    "totalSupply": 9038470294
+  },
+  "LUNCUSDT": {
+    "futuresInstrument": "1000LUNCUSDT",
+    "maxSupply": null,
+    "totalSupply": 6794537545224.575
+  },
+  "KLAYUSDT": {
+    "futuresInstrument": "KLAYUSDT",
+    "maxSupply": null,
+    "totalSupply": 5806332497.521772
+  },
+  "FLOWUSDT": {
+    "futuresInstrument": "FLOWUSDT",
+    "maxSupply": null,
+    "totalSupply": 1528897406.1266763
+  },
+  "HBARUSDT": {
+    "futuresInstrument": "HBARUSDT",
+    "maxSupply": 50000000000,
+    "totalSupply": 50000000000
+  },
+  "BANDUSDT": {
+    "futuresInstrument": "BANDUSDT",
+    "maxSupply": null,
+    "totalSupply": 150352245.58796
+  },
+  "STXUSDT": {
+    "futuresInstrument": "STXUSDT",
+    "maxSupply": 1818000000,
+    "totalSupply": 1818000000
+  },
+  "TRBUSDT": {
+    "futuresInstrument": "TRBUSDT",
+    "maxSupply": null,
+    "totalSupply": 2670413
+  },
+  "KSMUSDT": {
+    "futuresInstrument": "KSMUSDT",
+    "maxSupply": null,
+    "totalSupply": 15394634.20490474
+  },
+  "SOLUSDT": {
+    "futuresInstrument": "SOLUSDT",
+    "maxSupply": null,
+    "totalSupply": 583356053.1958265
+  },
+  "CELOUSDT": {
+    "futuresInstrument": "CELOUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 1000000000
+  },
+  "UMAUSDT": {
+    "futuresInstrument": "UMAUSDT",
+    "maxSupply": null,
+    "totalSupply": 120760360.22988607
+  },
+  "ARUSDT": {
+    "futuresInstrument": "ARUSDT",
+    "maxSupply": 66000000,
+    "totalSupply": 65652466
+  },
+  "RENDERUSDT": {
+    "futuresInstrument": "RENDERUSDT",
+    "maxSupply": null,
+    "totalSupply": 532219654.73549163
+  },
+  "COMPUSDT": {
+    "futuresInstrument": "COMPUSDT",
+    "maxSupply": null,
+    "totalSupply": 10000000
+  },
+  "BALUSDT": {
+    "futuresInstrument": "BALUSDT",
+    "maxSupply": 96150704,
+    "totalSupply": 64757131.105573
+  },
+  "AVAXUSDT": {
+    "futuresInstrument": "AVAXUSDT",
+    "maxSupply": 715748719,
+    "totalSupply": 444897372.1896028
+  },
+  "YFIUSDT": {
+    "futuresInstrument": "YFIUSDT",
+    "maxSupply": null,
+    "totalSupply": 36646.53224467
+  },
+  "SHIBUSDT": {
+    "futuresInstrument": "1000SHIBUSDT",
+    "maxSupply": null,
+    "totalSupply": 589519022422321.9
+  },
+  "SANDUSDT": {
+    "futuresInstrument": "SANDUSDT",
+    "maxSupply": null,
+    "totalSupply": 3000000000
+  },
+  "NEARUSDT": {
+    "futuresInstrument": "NEARUSDT",
+    "maxSupply": null,
+    "totalSupply": 1207759266
+  },
+  "OMUSDT": {
+    "futuresInstrument": "OMUSDT",
+    "maxSupply": null,
+    "totalSupply": 888888888
+  },
+  "CRVUSDT": {
+    "futuresInstrument": "CRVUSDT",
+    "maxSupply": null,
+    "totalSupply": 2163418513.9931383
+  },
+  "DOTUSDT": {
+    "futuresInstrument": "DOTUSDT",
+    "maxSupply": null,
+    "totalSupply": 1486758135.6019094
+  },
+  "GRTUSDT": {
+    "futuresInstrument": "GRTUSDT",
+    "maxSupply": null,
+    "totalSupply": 10799706720.163599
+  },
+  "SUSHIUSDT": {
+    "futuresInstrument": "SUSHIUSDT",
+    "maxSupply": null,
+    "totalSupply": 277733521.9010028
+  },
+  "AXSUSDT": {
+    "futuresInstrument": "AXSUSDT",
+    "maxSupply": null,
+    "totalSupply": 270000000
+  },
+  "EGLDUSDT": {
+    "futuresInstrument": "EGLDUSDT",
+    "maxSupply": 31415926,
+    "totalSupply": 27351725
+  },
+  "PERPUSDT": {
+    "futuresInstrument": "PERPUSDT",
+    "maxSupply": null,
+    "totalSupply": 150000000
+  },
+  "FXSUSDT": {
+    "futuresInstrument": "FXSUSDT",
+    "maxSupply": null,
+    "totalSupply": 99681495.59113361
+  },
+  "ACHUSDT": {
+    "futuresInstrument": "ACHUSDT",
+    "maxSupply": 10000000000,
+    "totalSupply": 9999999999.999989
+  },
+  "GALAUSDT": {
+    "futuresInstrument": "GALAUSDT",
+    "maxSupply": null,
+    "totalSupply": 36168826100.83894
+  },
+  "UNIUSDT": {
+    "futuresInstrument": "UNIUSDT",
+    "maxSupply": null,
+    "totalSupply": 1000000000
+  },
+  "USTCUSDT": {
+    "futuresInstrument": "USTCUSDT",
+    "maxSupply": null,
+    "totalSupply": 8956569281.511477
+  },
+  "FLMUSDT": {
+    "futuresInstrument": "FLMUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 617395832.7754058
+  },
+  "INJUSDT": {
+    "futuresInstrument": "INJUSDT",
+    "maxSupply": null,
+    "totalSupply": 100000000
+  },
+  "ALPHAUSDT": {
+    "futuresInstrument": "ALPHAUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 1000000000
+  },
+  "AAVEUSDT": {
+    "futuresInstrument": "AAVEUSDT",
+    "maxSupply": null,
+    "totalSupply": 16000000
+  },
+  "CFXUSDT": {
+    "futuresInstrument": "CFXUSDT",
+    "maxSupply": null,
+    "totalSupply": 5037158815.59
+  },
+  "LQTYUSDT": {
+    "futuresInstrument": "LQTYUSDT",
+    "maxSupply": 100000000,
+    "totalSupply": 100000000
+  },
+  "WOOUSDT": {
+    "futuresInstrument": "WOOUSDT",
+    "maxSupply": null,
+    "totalSupply": 2227453654.7177596
+  },
+  "API3USDT": {
+    "futuresInstrument": "API3USDT",
+    "maxSupply": null,
+    "totalSupply": 139755340.4007613
+  },
+  "BADGERUSDT": {
+    "futuresInstrument": "BADGERUSDT",
+    "maxSupply": 21000000,
+    "totalSupply": 21000000
+  },
+  "LDOUSDT": {
+    "futuresInstrument": "LDOUSDT",
+    "maxSupply": null,
+    "totalSupply": 1000000000
+  },
+  "1INCHUSDT": {
+    "futuresInstrument": "1INCHUSDT",
+    "maxSupply": null,
+    "totalSupply": 1500000000
+  },
+  "MASKUSDT": {
+    "futuresInstrument": "MASKUSDT",
+    "maxSupply": 100000000,
+    "totalSupply": 100000000
+  },
+  "AUCTIONUSDT": {
+    "futuresInstrument": "AUCTIONUSDT",
+    "maxSupply": 10000000,
+    "totalSupply": 7640684
+  },
+  "MINAUSDT": {
+    "futuresInstrument": "MINAUSDT",
+    "maxSupply": null,
+    "totalSupply": 1182758659.8400393
+  },
+  "ICPUSDT": {
+    "futuresInstrument": "ICPUSDT",
+    "maxSupply": null,
+    "totalSupply": 522209611.54765975
+  },
+  "MOVRUSDT": {
+    "futuresInstrument": "MOVRUSDT",
+    "maxSupply": null,
+    "totalSupply": 11495055
+  },
+  "KNCUSDT": {
+    "futuresInstrument": "KNCUSDT",
+    "maxSupply": 252301550,
+    "totalSupply": 239398811.00581488
+  },
+  "BICOUSDT": {
+    "futuresInstrument": "BICOUSDT",
+    "maxSupply": null,
+    "totalSupply": 1000000000
+  },
+  "METISUSDT": {
+    "futuresInstrument": "METISUSDT",
+    "maxSupply": null,
+    "totalSupply": 10000000
+  },
+  "IMXUSDT": {
+    "futuresInstrument": "IMXUSDT",
+    "maxSupply": 2000000000,
+    "totalSupply": 2000000000
+  },
+  "YGGUSDT": {
+    "futuresInstrument": "YGGUSDT",
+    "maxSupply": null,
+    "totalSupply": 1000000000
+  },
+  "FLOKIUSDT": {
+    "futuresInstrument": "1000FLOKIUSDT",
+    "maxSupply": null,
+    "totalSupply": 9687877502591.236
+  },
+  "JOEUSDT": {
+    "futuresInstrument": "JOEUSDT",
+    "maxSupply": 500000000,
+    "totalSupply": 464573155
+  },
+  "TONUSDT": {
+    "futuresInstrument": "TONUSDT",
+    "maxSupply": null,
+    "totalSupply": 5111117558.034759
+  },
+  "AGLDUSDT": {
+    "futuresInstrument": "AGLDUSDT",
+    "maxSupply": null,
+    "totalSupply": 77310001
+  },
+  "OPUSDT": {
+    "futuresInstrument": "OPUSDT",
+    "maxSupply": 4294967296,
+    "totalSupply": 4294967296
+  },
+  "ARBUSDT": {
+    "futuresInstrument": "ARBUSDT",
+    "maxSupply": null,
+    "totalSupply": 10000000000
+  },
+  "GMXUSDT": {
+    "futuresInstrument": "GMXUSDT",
+    "maxSupply": null,
+    "totalSupply": 9658256.26832083
+  },
+  "SSVUSDT": {
+    "futuresInstrument": "SSVUSDT",
+    "maxSupply": null,
+    "totalSupply": 11576871
+  },
+  "WLDUSDT": {
+    "futuresInstrument": "WLDUSDT",
+    "maxSupply": null,
+    "totalSupply": 10000000000
+  },
+  "ENSUSDT": {
+    "futuresInstrument": "ENSUSDT",
+    "maxSupply": null,
+    "totalSupply": 100000000
+  },
+  "MAGICUSDT": {
+    "futuresInstrument": "MAGICUSDT",
+    "maxSupply": 347714007,
+    "totalSupply": 347714007
+  },
+  "PEOPLEUSDT": {
+    "futuresInstrument": "PEOPLEUSDT",
+    "maxSupply": null,
+    "totalSupply": 5060137334.7
+  },
+  "TUSDT": {
+    "futuresInstrument": "TUSDT",
+    "maxSupply": null,
+    "totalSupply": 11035000000
+  },
+  "GMTUSDT": {
+    "futuresInstrument": "GMTUSDT",
+    "maxSupply": null,
+    "totalSupply": 5299047278.511265
+  },
+  "APEUSDT": {
+    "futuresInstrument": "APEUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 1000000000
+  },
+  "SUIUSDT": {
+    "futuresInstrument": "SUIUSDT",
+    "maxSupply": 10000000000,
+    "totalSupply": 10000000000
+  },
+  "RDNTUSDT": {
+    "futuresInstrument": "RDNTUSDT",
+    "maxSupply": 1500000000,
+    "totalSupply": 1500000000
+  },
+  "APTUSDT": {
+    "futuresInstrument": "APTUSDT",
+    "maxSupply": null,
+    "totalSupply": 1113309197.248336
+  },
+  "IDUSDT": {
+    "futuresInstrument": "IDUSDT",
+    "maxSupply": 2000000000,
+    "totalSupply": 1995442028.568885
+  },
+  "STRKUSDT": {
+    "futuresInstrument": "STRKUSDT",
+    "maxSupply": 10000000000,
+    "totalSupply": 10000000000
+  },
+  "TIAUSDT": {
+    "futuresInstrument": "TIAUSDT",
+    "maxSupply": null,
+    "totalSupply": 1066410958.903873
+  },
+  "BONKUSDT": {
+    "futuresInstrument": "1000BONKUSDT",
+    "maxSupply": null,
+    "totalSupply": 92883530331787.33
+  },
+  "BLURUSDT": {
+    "futuresInstrument": "BLURUSDT",
+    "maxSupply": null,
+    "totalSupply": 3000000000
+  },
+  "ZKUSDT": {
+    "futuresInstrument": "ZKUSDT",
+    "maxSupply": 21000000000,
+    "totalSupply": 21000000000
+  },
+  "PEPEUSDT": {
+    "futuresInstrument": "1000PEPEUSDT",
+    "maxSupply": 420690000000000,
+    "totalSupply": 420689899999994.8
+  },
+  "ORDIUSDT": {
+    "futuresInstrument": "ORDIUSDT",
+    "maxSupply": 21000000,
+    "totalSupply": 21000000
+  },
+  "ZROUSDT": {
+    "futuresInstrument": "ZROUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 1000000000
+  },
+  "PYTHUSDT": {
+    "futuresInstrument": "PYTHUSDT",
+    "maxSupply": null,
+    "totalSupply": 9999988814.104288
+  },
+  "MEMEUSDT": {
+    "futuresInstrument": "MEMEUSDT",
+    "maxSupply": 69000000000,
+    "totalSupply": 69000000000
+  },
+  "DYDXUSDT": {
+    "futuresInstrument": "DYDXUSDT",
+    "maxSupply": null,
+    "totalSupply": 771541452.07
+  },
+  "JTOUSDT": {
+    "futuresInstrument": "JTOUSDT",
+    "maxSupply": null,
+    "totalSupply": 1000000000
+  },
+  "ACEUSDT": {
+    "futuresInstrument": "ACEUSDT",
+    "maxSupply": 147000000,
+    "totalSupply": 146307870
+  },
+  "WIFUSDT": {
+    "futuresInstrument": "WIFUSDT",
+    "maxSupply": null,
+    "totalSupply": 998845578.585943
+  },
+  "NOTUSDT": {
+    "futuresInstrument": "NOTUSDT",
+    "maxSupply": null,
+    "totalSupply": 102474439122.20781
+  },
+  "JUPUSDT": {
+    "futuresInstrument": "JUPUSDT",
+    "maxSupply": null,
+    "totalSupply": 10000000000
+  },
+  "WUSDT": {
+    "futuresInstrument": "WUSDT",
+    "maxSupply": null,
+    "totalSupply": 10000000000
+  },
+  "AEVOUSDT": {
+    "futuresInstrument": "AEVOUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 1000000000
+  },
+  "ETHFIUSDT": {
+    "futuresInstrument": "ETHFIUSDT",
+    "maxSupply": 1000000000,
+    "totalSupply": 999999686.785753
+  },
+  "BOMEUSDT": {
+    "futuresInstrument": "BOMEUSDT",
+    "maxSupply": null,
+    "totalSupply": 68961768400.24771
+  },
+  "TNSRUSDT": {
+    "futuresInstrument": "TNSRUSDT",
+    "maxSupply": null,
+    "totalSupply": 1000000000
+  },
+  "DOGSUSDT": {
+    "futuresInstrument": "DOGSUSDT",
+    "maxSupply": 550000000000,
+    "totalSupply": 550000000000
+  }
+}
