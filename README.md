@@ -18,7 +18,7 @@ generate instruments in both Binance and Okx futures(swap) and spot.
 
 scheduling run this script daily.
 
-**genTotalSupply.js**
+**genSupply.js**
 generate instruments' max supply and total supply configuration file for calculating FDV later.
 
 scheduling run this script daily.
