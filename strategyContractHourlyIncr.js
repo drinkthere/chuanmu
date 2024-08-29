@@ -2,7 +2,10 @@ const { fileExists } = require("./utils/common");
 const { sleep, scheduleLoopTask } = require("./utils/run");
 const { log } = require("./utils/log");
 const BinanceClient = require("./clients/binance");
+const TgClient = require("./clients/tg");
+
 const binanceClient = new BinanceClient();
+const tgClient = new TgClient();
 
 const fdvMinThreshold = 10000000; // 10m
 const fdvMaxThreshold = 200000000; // 0.2b
@@ -73,6 +76,7 @@ const filterInstsByFDV = async () => {
 };
 
 const checkContractHourlyIncr = async (fdvFilteredInsts) => {
+    let msg = "";
     for (let i = 0; i < fdvFilteredInsts.length; i++) {
         const inst = fdvFilteredInsts[i];
         const openInterests = await binanceClient.getOpenInterestHist(
@@ -91,17 +95,16 @@ const checkContractHourlyIncr = async (fdvFilteredInsts) => {
                 currHourOpenInterest - lastHourOpenInterest >
                 hourlyOpenInterestIncrThreshold
             ) {
-                const msg = `${inst} hourly open interest hourly incr exceed ${hourlyOpenInterestIncrThreshold}`;
-                console.log(msg);
-                // @todo 发送电报
-            } else {
-                const msg = `${inst} ${
-                    currHourOpenInterest - lastHourOpenInterest
-                }`;
-                console.log(msg);
+                msg += `${inst} hourly open interest hourly incr exceed ${hourlyOpenInterestIncrThreshold}\n`;
             }
         }
         await sleep(100);
+    }
+    if (msg != "") {
+        console.log(msg);
+        tgClient.sendMsg(msg);
+    } else {
+        log("no signal");
     }
 };
 

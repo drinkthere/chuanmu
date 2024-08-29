@@ -1,9 +1,11 @@
 # requirements
 
 -   coinmarketcap api key
+-   telegram bot key and channel id
 
 mv .env.bak .env
 change to your coinmarketcap api key
+change to your telegram bot token and channel id
 
 # chuanmu
 
