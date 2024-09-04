@@ -74,6 +74,48 @@ function writeStringToFile(filePath, content) {
     });
 }
 
+function getCurr15MinBarStartTs() {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+
+    let targetMinutes;
+
+    if (minutes >= 0 && minutes <= 14) {
+        targetMinutes = 0;
+    } else if (minutes >= 15 && minutes <= 29) {
+        targetMinutes = 15;
+    } else if (minutes >= 30 && minutes <= 44) {
+        targetMinutes = 30;
+    } else if (minutes >= 45 && minutes <= 59) {
+        targetMinutes = 45;
+    }
+
+    // 创建目标时间的 Date 对象
+    const targetTime = new Date(
+        now.getFullYear(),
+        now.getMonth(),
+        now.getDate(),
+        hours,
+        targetMinutes,
+        0
+    );
+
+    // 返回目标时间的毫秒时间戳
+    return targetTime.getTime();
+}
+
+// 根据时间戳过滤出前num根bar
+function getPreviousItems(dataArray, tskey, targetTimestamp, num = 2) {
+    // 过滤出目标时间戳之前的所有项
+    const filteredItems = dataArray.filter(
+        (item) => item[tskey] < targetTimestamp
+    );
+
+    // 返回最后两项
+    return filteredItems.slice(-num);
+}
+
 module.exports = {
     chunkArray,
     getDecimals,
@@ -81,4 +123,6 @@ module.exports = {
     fileExists,
     deleteFilesInDirectory,
     writeStringToFile,
+    getCurr15MinBarStartTs,
+    getPreviousItems,
 };

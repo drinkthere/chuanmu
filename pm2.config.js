@@ -21,5 +21,12 @@ module.exports = {
             out_file: "logs/incr-out.log",
             error_file: "logs/incr-error.log",
         },
+        {
+            name: "strategy15MinVolOIDelta",
+            script: "strategy15MinVolOIDelta.js",
+            args: "",
+            out_file: "logs/15min-out.log",
+            error_file: "logs/15min-error.log",
+        },
     ],
 };

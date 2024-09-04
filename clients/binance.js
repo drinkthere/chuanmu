@@ -40,7 +40,13 @@ class BinanceClient {
     }
 
     async getOpenInterestHist(symbol, period, limit) {
-        return await this.client.futuresOpenInterestHist(symbol);
+        return await this.client.futuresOpenInterestHist(symbol, period, limit);
+    }
+
+    async getKlines(symbol, period, limit) {
+        return await this.client.futuresCandles(symbol, period, {
+            limit,
+        });
     }
 }
 module.exports = BinanceClient;

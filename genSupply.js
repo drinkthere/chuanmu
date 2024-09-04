@@ -1,5 +1,6 @@
 const { fileExists, writeStringToFile } = require("./utils/common");
 const { sleep, scheduleLoopTask } = require("./utils/run");
+const { log } = require("./utils/log");
 const CoinMarketCapClient = require("./clients/coinmarketcap");
 const cmcClient = new CoinMarketCapClient();
 
@@ -55,6 +56,8 @@ const initSymbolIdMap = async () => {
 const schedulingGenSymbolTotalSupply = async () => {
     scheduleLoopTask(async () => {
         try {
+            const configFile = "./configs/instrumentSupply.json";
+            log(`开始更新${configFile}文件`);
             const cmcIdArr = [];
             const totalSupplyMap = {};
             for (instrument of Object.keys(allInstruments)) {
@@ -81,7 +84,8 @@ const schedulingGenSymbolTotalSupply = async () => {
             });
 
             const jsonData = JSON.stringify(totalSupplyMap, null, 2);
-            writeStringToFile("./configs/instrumentSupply.json", jsonData);
+            writeStringToFile(configFile, jsonData);
+            log(`${configFile}更新完成`);
         } catch (e) {
             console.error(e);
         }

@@ -13,7 +13,6 @@ const tgClient = new TgClient();
 
 const fdvMinThreshold = 10000000; // 10m
 const fdvMaxThreshold = 500000000; // 0.2b
-const hourlyOpenInterestIncrThreshold = 2000000; // 2m
 
 let instrumentSupplyMap = {};
 
@@ -33,40 +32,57 @@ const init = async () => {
 };
 
 const schedulingCheckSignal = async () => {
-    // 确保第一次执行的时候是一小时的开始，这里设置在第2秒
-    const now = new Date();
-    const nextTime = new Date(
-        now.getFullYear(),
-        now.getMonth(),
-        now.getDate(),
-        now.getHours(),
-        0,
-        5
-    );
-    if (now.getSeconds() >= 2) {
-        nextTime.setHours(nextTime.getHours() + 1);
-    }
-
-    // 等待到下一次执行时间
-    const delay = nextTime.getTime() - now.getTime();
+    // 等待到下一个执行时间
+    const delay = getDelay();
     await sleep(delay);
 
     scheduleLoopTask(async () => {
         try {
-            log("开始检查山寨币合约持仓量异动信号");
+            log("开始检查山寨币合约交易量及未平仓量异动信号");
             // 根据市值过滤出要检查的币
             const fdvFilteredInsts = await filterInstsByFDV();
 
             // 遍历市值符合要求的山寨币，获取小时级别合约持仓增量，并检查是否满足发送信号的要求
-            await checkContractHourlyIncr(fdvFilteredInsts);
-            log("结束山寨币合约持仓量异动信号检查");
+            await check15MinDelta(fdvFilteredInsts);
+            log("结束检查山寨币合约交易量及未平仓量异动信号");
         } catch (e) {
             console.error(e);
         }
 
-        // 1 小时一次
-        await sleep(3600 * 1000);
+        // 15 分一次
+        const delay = getDelay();
+        await sleep(delay);
     });
+};
+
+const getDelay = () => {
+    const now = new Date();
+    let nextExecution = new Date(now);
+
+    // 计算下一个执行时间
+    const sec = 3;
+    if (
+        now.getMinutes() < 15 ||
+        (now.getMinutes() === 15 && now.getSeconds() < sec)
+    ) {
+        nextExecution.setMinutes(15, sec); // 下一个15分03秒
+    } else if (
+        now.getMinutes() < 30 ||
+        (now.getMinutes() === 30 && now.getSeconds() < sec)
+    ) {
+        nextExecution.setMinutes(30, sec); // 下一个30分03秒
+    } else if (
+        now.getMinutes() < 45 ||
+        (now.getMinutes() === 45 && now.getSeconds() < sec)
+    ) {
+        nextExecution.setMinutes(45, sec); // 下一个45分03秒
+    } else {
+        // 超过45分，设置为下一个小时的03秒
+        nextExecution.setMinutes(0, sec);
+        nextExecution.setHours(now.getHours() + 1);
+    }
+
+    return nextExecution - now;
 };
 
 const filterInstsByFDV = async () => {
@@ -97,14 +113,17 @@ const filterInstsByFDV = async () => {
     return filteredInstruments;
 };
 
-const checkContractHourlyIncr = async (fdvFilteredInsts) => {
+const check15MinDelta = async (fdvFilteredInsts) => {
     let msg = "";
+    let ratios = [];
     for (let i = 0; i < fdvFilteredInsts.length; i++) {
         const inst = fdvFilteredInsts[i];
         const currBarTs = getCurr15MinBarStartTs();
+
+        // 多取几根K线，根据当前时间戳过滤出前两根
         const openInterests = await binanceClient.getOpenInterestHist(
             inst,
-            "1h",
+            "15m",
             4
         );
         const lastTwoOiBars = getPreviousItems(
@@ -114,7 +133,9 @@ const checkContractHourlyIncr = async (fdvFilteredInsts) => {
             2
         );
 
-        if (lastTwoOiBars.length == 2) {
+        const volumes = await binanceClient.getKlines(inst, "15m", 4);
+        const lastTwoVolBars = getPreviousItems(volumes, 0, currBarTs, 2);
+        if (lastTwoOiBars.length == 2 && lastTwoVolBars.length == 2) {
             currHourOpenInterest = parseFloat(
                 lastTwoOiBars[1].sumOpenInterestValue
             );
@@ -122,20 +143,34 @@ const checkContractHourlyIncr = async (fdvFilteredInsts) => {
                 lastTwoOiBars[0].sumOpenInterestValue
             );
 
-            if (
-                currHourOpenInterest - lastHourOpenInterest >
-                hourlyOpenInterestIncrThreshold
-            ) {
-                msg += `${inst} hourly open interest hourly incr exceed ${hourlyOpenInterestIncrThreshold}\n`;
-            }
+            const oiRatio = Math.abs(
+                currHourOpenInterest / lastHourOpenInterest
+            ); // 计算比率
+
+            currBarVol = parseFloat(lastTwoVolBars[1][5]);
+            lastBarVol = parseFloat(lastTwoVolBars[0][5]);
+
+            const volRatio = Math.abs(currBarVol / lastBarVol); // 计算比率
+            ratios.push({ inst, oiRatio, volRatio });
         }
         await sleep(100);
     }
-    if (msg != "") {
-        console.log(msg);
-        tgClient.sendMsg(msg);
-    } else {
-        log("no signal");
+    // 排序并打印前五条记录
+    instRatios = ratios.filter((r) => r.oiRatio > 1);
+
+    instRatios.sort((a, b) => {
+        const bRatio = (b.oiRatio + b.volRatio) / 2;
+        const aRatio = (a.oiRatio + a.volRatio) / 2;
+        return bRatio - aRatio;
+    });
+
+    let ratioMsg = "";
+    for (let i = 0; i < Math.min(5, instRatios.length); i++) {
+        ratioMsg += `${instRatios[i].inst} - oiRatio: ${instRatios[i].oiRatio}, volRatio: ${instRatios[i].volRatio}\n`;
+    }
+    if (ratioMsg != "") {
+        console.log(ratioMsg);
+        tgClient.sendMsg(ratioMsg);
     }
 };
 
