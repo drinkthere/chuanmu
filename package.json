@@ -17,10 +17,12 @@
   },
   "homepage": "https://github.com/drinkthere/chuanmu#readme",
   "dependencies": {
-    "axios": "^1.7.5",
+    "axios": "^1.7.7",
     "dotenv": "^16.4.5",
     "node-binance-api": "^0.13.1",
     "node-telegram-bot-api": "^0.66.0",
-    "okx-api": "^1.4.3"
+    "nvm": "^0.0.4",
+    "okx-api": "^1.4.3",
+    "technicalindicators": "^3.1.0"
   }
 }
