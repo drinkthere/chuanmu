@@ -125,7 +125,9 @@ const main = async () => {
                         //if (pdmi < mdmi && obv < obvema30) {
                         // obv在ema30 下方
                         // dmi下降中
-                        console.log(symbol, "ready to short");
+                        const msg = `${symbol} ready to short`;
+                        tgClient.sendMsg(msg);
+                        console.log(msg);
                     } else {
                         console.log(symbol, "no ready to short signal");
                     }
@@ -135,7 +137,9 @@ const main = async () => {
                         //if (pdmi > mdmi && obv > obvema30) {
                         // obv 在ema30 上方
                         // dmi在上升中
-                        console.log(symbol, "ready to long");
+                        const msg = `${symbol} ready to long`;
+                        tgClient.sendMsg(msg);
+                        console.log(msg);
                     } else {
                         console.log(symbol, "no ready to long signal");
                     }
@@ -146,7 +150,9 @@ const main = async () => {
                             // 在ema200下，等待上升突破
                             if (obv > obvema30) {
                                 //if (pdmi > mdmi && obv > obvema30) {
-                                console.log(symbol, "prepare to long");
+                                const msg = `${symbol} prepare to long`;
+                                tgClient.sendMsg(msg);
+                                console.log(msg);
                             } else {
                                 console.log(
                                     symbol,
@@ -157,7 +163,9 @@ const main = async () => {
                             // 在ema200上，等待下降突破
                             if (obv < obvema30) {
                                 //if (pdmi < mdmi && obv < obvema30) {
-                                console.log(symbol, "prepare to short");
+                                const msg = `${symbol} prepare to short`;
+                                tgClient.sendMsg(msg);
+                                console.log(msg);
                             } else {
                                 console.log(
                                     symbol,
